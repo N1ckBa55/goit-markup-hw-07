@@ -627,6 +627,7 @@ gap: 72px 16px;
   .customer-list {
     justify-content: center;
     align-items: center;
+    gap: 72px 24px;
   }
 }
 
@@ -643,7 +644,13 @@ height: 88px;
 width: 190px;
 }
 
-@media only screen and (min-width: minwidthpx) {
+@media only screen and (min-width: 768px) {
+  .client-list {
+    width: 168px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
   .client-list {
     width: calc((100% - 120px) / 6);
   }
