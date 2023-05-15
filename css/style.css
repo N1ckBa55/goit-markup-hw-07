@@ -1615,14 +1615,9 @@ fill: var(--navy-blue);
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
+  /* padding: 10px; */
   color: var(--navy-blue);
   text-decoration: none;
-}
-
-.mob-link{
-text-decoration: none;
-padding: 0 0;
 }
 
 .social-mobile{
