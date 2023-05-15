@@ -1107,16 +1107,22 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
 0px 1px 3px rgba(0, 0, 0, 0.12), 
 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-padding: 72px 24px 24px 24px;
+padding: 72px 16px 24px 16px;
 transform: translate(-50%, -50%) scale(1) ;
 transition: transform 500ms var(--cubic);
 }
 
-@media only screen and (min-width: minwidthpx) {
+@media only screen and (min-width: 768px) {
   .modal {
     width: 408px;
+    padding: 72px 25px 24px 23px;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    padding: 72px 24px 24px 24px;
+  }
 
 .backdrop.is-hidden .modal{
 transform: scale(0.4) translate(-100%, 100%) rotate(-180deg); 
