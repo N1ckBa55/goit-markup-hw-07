@@ -14,6 +14,12 @@ li:last-child {margin-bottom: 0;}
 .link { text-decoration: none; color: currentColor;
 }
 
+@media only screen and (max-width: 768px) {
+  .prtf-image {
+    width: 100%;
+  }
+}
+
 
 /**
   |============================
@@ -124,9 +130,9 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--iris);
 }
-.logo{
+/* .logo{
 margin-right: auto ;
-}
+} */
 
 /* @media only screen and (min-width: 768px) {
   .logo {
@@ -154,7 +160,6 @@ color: var(--navy-blue);
 .heder-nav{
 display: flex;
 align-items: center;
-margin-right: auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -162,6 +167,14 @@ margin-right: auto;
     display: none;
   }
 }
+
+@media only screen and (min-width: 1158px) {
+  .heder-nav {
+    margin-right: auto;
+  }
+}
+
+
 
 
 /* links */
@@ -241,8 +254,24 @@ color: var(--ocean);
 .header-container, .head-nav-links {
 display: flex;
 align-items: center;
-gap: 40px;
+justify-content: space-between;
+
 }
+
+@media only screen and (min-width: 768px) {
+  .head-nav-links {
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-container{
+    padding-top: 24px;
+    padding-bottom: 22px;
+}
+}
+
+ 
 
 .contact-head-list{
 display: flex;
@@ -359,7 +388,7 @@ letter-spacing: 0.02em;
 color: var(--white);
 max-width: 320px;
 margin: 0 auto;
-margin-bottom: 36px;
+margin-bottom: 72px;
 }
 
 
@@ -369,6 +398,12 @@ margin-bottom: 36px;
     line-height: 1.07;
     max-width: 496px;
     margin-bottom: 48px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .first-title {
+    margin-bottom: 36px;
   }
 }
 
@@ -658,11 +693,11 @@ margin-bottom: 72px;
 display: flex;
 flex-wrap: wrap;
 gap: 72px 16px;
+justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
   .customer-list {
-    justify-content: center;
     align-items: center;
     gap: 72px 24px;
   }
@@ -676,14 +711,22 @@ gap: 72px 16px;
 }
 
 
-.client-list{
-height: 88px;
-width: 190px;
+.client-list {
+  width: calc((100% - 120px) / 1);
+}
+
+@media only screen and (min-width: 330px) {
+  .client-list{
+    height: 88px;
+    /* width: 190px; */
+    width: calc((100% - 120px) / 2);
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .client-list {
-    width: 168px;
+    /* width: 168px; */
+    width: calc((100% - 120px) / 3);
   }
 }
 
@@ -783,21 +826,19 @@ padding: 8px 16px;
 .filter-button-list{
 display: flex;
 align-items: center;
-justify-content: flex-start;
 gap: 16px 24px;
-margin-bottom: 72px;
-width: 263px;
+margin-bottom: 48px;
 flex-wrap: wrap;
-
+width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .filter-button-list {
     align-items: center;
-    width: 100%;
     flex-wrap: nowrap;
     gap: 24px;
     justify-content: center;
+    margin-bottom: 72px;
   }
 }
 
@@ -936,23 +977,18 @@ line-height: 1.5;
 }
 
 .logo-pad {
-display: flex;
+display: block;
 align-items: center;
-justify-content: center;
 margin-bottom: 16px;
+text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .logo-pad {
-    display: block;
+    text-align: start;
   }
 }
 
-@media only screen and (min-width: 1158px) {
-  .logo-pad {
-    display: block;
-  }
-}
 
 .studio-color {
 font-family: "Raleway", sans-serif;
@@ -987,6 +1023,7 @@ gap: 72px;
     flex-direction: row;
     justify-content: unset;
     flex-wrap: nowrap;
+    gap: 0 0;
   }
 }
 
@@ -1009,13 +1046,12 @@ line-height: 1.5;
 letter-spacing: 2%;
 color: var(--white);
 margin-bottom: 16px;
-display: flex;
-justify-content: center;
+text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .social-title {
-    display: block;
+    text-align: start;
   }
 }
 
@@ -1060,11 +1096,13 @@ justify-content: center;
 
 .subscribe-form{
 margin-left: 0;
+width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .subscribe-form {
     margin-right: auto;
+    width: 453px;
   }
 }
 
@@ -1082,13 +1120,12 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--white);
-display: flex;
-justify-content: center;
+text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .subscribe-title {
-    display: block;
+    text-align: start;
   }
 }
 
@@ -1138,8 +1175,12 @@ color: var(--white);
 outline: none;
 padding: 0 16px;
 margin-bottom: 16px;
-min-width: 320px;
-max-width: 398px;
+}
+
+@media only screen and (max-width: 768px) {
+   .footer-input{
+      max-width: 428px;
+   }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1579,7 +1620,10 @@ fill: var(--navy-blue);
   text-decoration: none;
 }
 
-
+.mob-link{
+text-decoration: none;
+padding: 0 0;
+}
 
 .social-mobile{
 display: flex;
