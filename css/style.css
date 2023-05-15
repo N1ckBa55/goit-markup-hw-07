@@ -293,22 +293,58 @@ padding: 14px 0 112px;
 
 @media only screen and (max-width: 428px) {
   .hero-image{
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)), url(../images/background/mobstudio@1.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)), url(../images/background/mobstudio@2.jpg);
+  }
   }
 }
 
 @media only screen and (min-width: 429px) and (max-width: 768px) {
   .hero-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)), url(../images/background/Dark-bgbbtab@1.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)), url(../images/background/Dark-bgbgtab@2.jpg);
+  }
   }
 }
 
 @media only screen and (min-width: 769px) {
   .hero-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)), url(../images/background/people-office1.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)), url(../images/background/people-office2.jpg);
+  }
   }
 }
 
