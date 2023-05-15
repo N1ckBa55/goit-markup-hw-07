@@ -1529,3 +1529,7 @@ color: var(--slate);
 .mobile-menu .contact-mob-link{
 color: var(--iris)
 }
+
+.hamburger-menu{
+stroke: var(--navy-blue);
+}
