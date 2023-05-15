@@ -684,7 +684,13 @@ border-color var(--anim-properties) ;
   |============================
 */
 .portfolio-sections {
-padding: 96px 0 120px
+padding: 48px 0 48px;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-sections {
+    padding: 96px 0 120px;
+  }
 }
 
 /* Buttons sections */
@@ -722,17 +728,34 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 12px 24px;
+padding: 8px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .btns{
+   padding: 12px 24px;
+  }
 }
 
 .filter-button-list{
 display: flex;
 align-items: center;
-justify-content: center;
-gap: 24px;
+justify-content: flex-start;
+gap: 16px 24px;
 margin-bottom: 72px;
+width: 263px;
+flex-wrap: wrap;
+
 }
 
+@media only screen and (min-width: 768px) {
+  .filter-button-list {
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
 
 /* Links sections */
 
