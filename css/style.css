@@ -1617,7 +1617,7 @@ fill: var(--navy-blue);
 
 .social-mobile{
 display: flex;
-gap: 56px;
+justify-content: space-between;
 align-items: center;
 }
 
