@@ -304,7 +304,7 @@ background-position: center;
 background-size: cover;
 max-width: 1440px;
 margin: 0 auto;
-padding: 14px 0 112px;
+padding:112px 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -700,13 +700,15 @@ justify-content: center;
   .customer-list {
     align-items: center;
     gap: 72px 24px;
+    width: 552px;
+    margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .customer-list {
     flex-wrap: nowrap;
-    gap: 24px;
+    width: 100%;
   }
 }
 
@@ -1009,7 +1011,7 @@ gap: 72px 24px;
   .flex-footer {
     flex-direction: row;
     align-items: center;
-    justify-content: unset;
+    justify-content: start;
     flex-wrap: wrap;
   }
 }
