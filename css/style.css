@@ -954,11 +954,6 @@ background-color: var(--navy-blue);
 padding: 96px 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .footer {
-    padding: 96px 0 96px 108px;
-  }
-}
 
 @media only screen and (min-width: 1158px) {
   .footer {
@@ -1013,6 +1008,7 @@ gap: 72px 24px;
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
+    width: 552px;
   }
 }
 
@@ -1022,6 +1018,7 @@ gap: 72px 24px;
     justify-content: unset;
     flex-wrap: nowrap;
     gap: 0 0;
+    width: 100%;
   }
 }
 
@@ -1088,7 +1085,7 @@ justify-content: center;
 @media only screen and (min-width: 768px) {
   .footer-form {
     flex-direction: row;
-    justify-content: unset;
+    /* justify-content: unset; */
   }
 }
 
